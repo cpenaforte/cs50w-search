@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/styles/styles.css">
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <div id="advanced-topbar">
+            <div id="advanced-logo-container">
+                <a href="../index.html">
+                    <img width="74" height="24" src="../assets/images/google-logo.png" alt="Google logo">
+                </a>
+            </div>
+            <div id="links-container">
+                <a href="../index.html">Regular</a>
+                <a href="./images.html">Images</a>
+            </div>
+        </div>
+        <div id="advanced-main-container">
+            <span>Advanced Search</span>
+            <form action="https://www.google.com/search">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Find pages with...</th>
+                            <th></th>
+                            <th id="tips-header">To do this in the search box.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="label-datacell">all these words:</td>
+                            <td class="input-datacell">
+                                <input id="npt-query-all" type="text" name="as_q">
+                            </td>
+                            <td class="tips">Type the important words: tri-colour rat terrier</td>
+                        </tr>
+                        <tr>
+                            <td class="label-datacell">this exact word or phrase:</td>
+                            <td class="input-datacell">
+                                <input id="npt-query-exact" type="text" name="as_epq">
+                            </td>
+                            <td class="tips">Put exact words in quotes: "rat terrier"</td>
+                        </tr>
+                        <tr>
+                            <td class="label-datacell">any of these words:</td>
+                            <td class="input-datacell">
+                                <input id="npt-query-any" type="text" name="as_oq">
+                            </td>
+                            <td class="tips">Type OR between all the words you want: miniature OR standard</td>
+                        </tr>
+                        <tr>
+                            <td class="label-datacell">none of these words:</td>
+                            <td class="input-datacell">
+                                <input id="npt-query-none" type="text" name="as_eq">
+                            </td>
+                            <td class="tips">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="input-datacell">
+                                <div id="action-row">
+                                    <input id="btn-advanced-submit" type="submit" value="Advanced Search">
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <footer id="advanced-page-footer"></footer>
+    </body>
+</html>
